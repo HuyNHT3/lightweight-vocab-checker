@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocab Quiz - Result</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kết quả</h1>
+        <div id="score-summary">
+            Bạn đã hoàn thành <span id="correct-count">0</span>/<span id="total-count">0</span> câu.
+        </div>
+
+        <div id="results-list" class="results-container">
+            <!-- Kết quả chi tiết sẽ được render bằng JS -->
+        </div>
+
+        <div class="footer-actions">
+            <a href="index.html" class="btn-primary">Làm lại</a>
+        </div>
+    </div>
+
+    <script src="js/audio-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/result-renderer.js"></script>
+</body>
+</html>

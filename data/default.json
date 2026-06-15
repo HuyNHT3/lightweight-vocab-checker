@@ -1,0 +1,17 @@
+[
+  {
+    "id": "topic1.json",
+    "title": "IELTS Academic (Cambridge 8)",
+    "description": "Bộ từ vựng học thuật từ Cam 8"
+  },
+  {
+    "id": "topic2.json",
+    "title": "IELTS Cambridge (General)",
+    "description": "Từ vựng thông dụng trong kỳ thi Cambridge"
+  },
+  {
+    "id": "topic3.json",
+    "title": "Let's talk 2",
+    "description": "Từ vựng thông dụng trong Let's talk 2"
+  }
+]

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocab Quiz - Testing</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-header">
+            <span id="progress-text">Câu hỏi: 1/10</span>
+            <span id="timer-display" class="hidden">00:00</span>
+        </div>
+
+        <div class="quiz-body">
+            <div class="word-header">
+                <div id="ipa-display" class="ipa-text">/ˈænəˌlaɪz/</div>
+                <button id="speaker-btn" class="icon-btn" title="Nghe phát âm">🔊</button>
+            </div>
+            <div id="example-display" class="example-text">
+                The scientist will <span class="masked">****</span> the data carefully.
+            </div>
+            
+            <div class="input-section">
+                <input type="text" id="answer-input" placeholder="Nhập đáp án..." autocomplete="off">
+                <div class="action-buttons">
+                    <button id="skip-btn" class="btn-secondary">Bỏ qua</button>
+                    <button id="submit-btn" class="btn-primary">Gửi</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="warning-container" class="warning-text hidden">
+            Cảnh báo: Không được chuyển tab! (<span id="warning-count">0</span>/3)
+        </div>
+    </div>
+
+    <script src="js/audio-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/vocab-service.js"></script>
+    <script src="js/quiz-engine.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "topic": "IELTS Cambridge Vocabulary",
+  "description": "Common academic words for IELTS preparation.",
+  "words": [
+    {
+      "word": "overheads",
+      "type": "Noun",
+      "ipa": "/ˈəʊ.və.hedz/",
+      "meaning": "chi phí vận hành",
+      "example": "The company is looking for ways to reduce its overheads.",
+      "audio": "/assets/audio/overheads.mp3"
+    },
+    {
+      "word": "vegetarian",
+      "type": "Noun",
+      "ipa": "/ˌvedʒ.ɪˈteə.ri.ən/",
+      "meaning": "ăn chay",
+      "example": "He has been a strict vegetarian for ten years.",
+      "audio": "/assets/audio/vegetarian.mp3"
+    },
+    {
+      "word": "keep-fit studio",
+      "type": "Noun",
+      "ipa": "/ˌkiːp ˈfɪt ˈstjuː.di.əʊ/",
+      "meaning": "Phòng tập thể hình/thể dục",
+      "example": "The new keep-fit studio has all the latest exercise equipment.",
+      "audio": "/assets/audio/keep_fit_studio.mp3"
+    },
+    {
+      "word": "salad bar",
+      "type": "Noun",
+      "ipa": "/ˈsæl.əd bɑː/",
+      "meaning": "quầy salad tự chọn",
+      "example": "I prefer the salad bar because I can choose exactly what I want.",
+      "audio": "/assets/audio/salad_bar.mp3"
+    },
+    {
+      "word": "book an instructor's assessment",
+      "type": "Noun",
+      "ipa": "/bʊk ən ɪnˈstrʌk.təz əˈses.mənt/",
+      "meaning": "đặt lịch để huấn luyện viên đánh giá",
+      "example": "All new members must book an instructor's assessment before using the gym.",
+      "audio": "/assets/audio/book_an_instructors_assessment.mp3"
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "topic": "Let's Talk 2: Lesson 12AB and Self-study",
+  "description": "Vocabulary related to news reporting, life stories, and past time expressions.",
+  "words": [
+    {
+      "word": "reporter",
+      "type": "Noun",
+      "ipa": "/rɪˈpɔː.tər/",
+      "meaning": "Phóng viên",
+      "example": "Welcome. I’m Ron Boyd, and with me tonight is reporter Veronica Mendez.",
+      "audio": ""
+    },
+    {
+      "word": "news story",
+      "type": "Noun",
+      "ipa": "/njuːz ˌstɔː.ri/",
+      "meaning": "Câu chuyện tin tức",
+      "example": "Tonight, we hear first news stories from our reporters around the globe.",
+      "audio": ""
+    },
+    {
+      "word": "camping trip",
+      "type": "Noun",
+      "ipa": "/ˈkæm.pɪŋ trɪp/",
+      "meaning": "Chuyến cắm trại",
+      "example": "Brennan was on a camping trip with his Boy Scout troop and got lost in the mountains.",
+      "audio": ""
+    },
+    {
+      "word": "volunteer",
+      "type": "Noun",
+      "ipa": "/ˌvɒl.ənˈtɪər/",
+      "meaning": "Tình nguyện viên",
+      "example": "His family created a website asking for volunteers to help find him.",
+      "audio": ""
+    },
+    {
+      "word": "rowboat",
+      "type": "Noun",
+      "ipa": "/ˈrəʊ.bəʊt/",
+      "meaning": "Thuyền chèo",
+      "example": "Ollie Hicks left New York to cross the Atlantic in a red rowboat.",
+      "audio": ""
+    },
+    {
+      "word": "record",
+      "type": "Noun",
+      "ipa": "/ˈrek.ɔːd/",
+      "meaning": "Kỷ lục",
+      "example": "He had hoped to break the record of 62 days for the slowest crossing.",
+      "audio": ""
+    },
+    {
+      "word": "spelling bee",
+      "type": "Noun",
+      "ipa": "/ˈspel.ɪŋ biː/",
+      "meaning": "Cuộc thi đánh vần",
+      "example": "Katharine Close has just won the Scripps National Spelling Bee.",
+      "audio": ""
+    },
+    {
+      "word": "navigation system",
+      "type": "Noun",
+      "ipa": "/ˌnæv.ɪˈɡeɪ.ʃən ˌsɪs.təm/",
+      "meaning": "Hệ thống định vị",
+      "example": "The man was following the instructions from his car’s navigation system.",
+      "audio": ""
+    },
+    {
+      "word": "crash",
+      "type": "Verb",
+      "ipa": "/kræʃ/",
+      "meaning": "Đâm sầm, tai nạn",
+      "example": "His trip ended when he crashed into a pile of sand.",
+      "audio": ""
+    },
+    {
+      "word": "contestant",
+      "type": "Noun",
+      "ipa": "/kənˈtes.tənt/",
+      "meaning": "Thí sinh",
+      "example": "Last year, she came in seventh place as a contestant in the spelling bee.",
+      "audio": ""
+    },
+    {
+      "word": "burglar",
+      "type": "Noun",
+      "ipa": "/ˈbɜː.ɡlər/",
+      "meaning": "Kẻ trộm",
+      "example": "A burglar stole $100 in cash and a computer from the house.",
+      "audio": ""
+    },
+    {
+      "word": "break-in",
+      "type": "Noun",
+      "ipa": "/ˈbreɪk.ɪn/",
+      "meaning": "Cuộc đột nhập",
+      "example": "Because there was no sign of a break-in, the police are sure the dog opened the door.",
+      "audio": ""
+    },
+    {
+      "word": "octopus",
+      "type": "Noun",
+      "ipa": "/ˈɒk.tə.pəs/",
+      "meaning": "Con bạch tuộc",
+      "example": "Frieda, an octopus at the Munich Zoo, has learned how to open jars of seafood snacks.",
+      "audio": ""
+    },
+    {
+      "word": "zoo attendant",
+      "type": "Noun",
+      "ipa": "/zuː əˌten.dənt/",
+      "meaning": "Nhân viên vườn thú",
+      "example": "All we did was open some jars where she could see us, says a zoo attendant.",
+      "audio": ""
+    },
+    {
+      "word": "remarried",
+      "type": "Verb",
+      "ipa": "/ˌriːˈmær.id/",
+      "meaning": "Tái hôn",
+      "example": "Mary Brown was very angry when her ex-husband remarried.",
+      "audio": ""
+    },
+    {
+      "word": "phone bill",
+      "type": "Noun",
+      "ipa": "/fəʊn bɪl/",
+      "meaning": "Hóa đơn điện thoại",
+      "example": "When the couple returned two weeks later, the phone bill was $8,000.",
+      "audio": ""
+    },
+    {
+      "word": "emu",
+      "type": "Noun",
+      "ipa": "/ˈiː.mjuː/",
+      "meaning": "Chim đà điểu châu Úc",
+      "example": "An angry emu chased a 10-year-old girl up a tree in her backyard.",
+      "audio": ""
+    },
+    {
+      "word": "rescue",
+      "type": "Verb",
+      "ipa": "/ˈres.kjuː/",
+      "meaning": "Giải cứu",
+      "example": "Australian firefighters rescued a girl after she was chased by an emu.",
+      "audio": ""
+    },
+    {
+      "word": "odd",
+      "type": "Adjective",
+      "ipa": "/ɒd/",
+      "meaning": "Kỳ quặc",
+      "example": "We’re looking at that section of the paper with all the funny, odd news stories.",
+      "audio": ""
+    },
+    {
+      "word": "headline",
+      "type": "Noun",
+      "ipa": "/ˈhed.laɪn/",
+      "meaning": "Tiêu đề",
+      "example": "This is at the top of a story in the newspaper.",
+      "audio": ""
+    },
+    {
+      "word": "classifieds",
+      "type": "Noun",
+      "ipa": "/ˈklæs.ɪ.faɪdz/",
+      "meaning": "Mục rao vặt",
+      "example": "You can find small ads in the classifieds section of a newspaper.",
+      "audio": ""
+    },
+    {
+      "word": "election",
+      "type": "Noun",
+      "ipa": "/iˈlek.ʃən/",
+      "meaning": "Cuộc bầu cử",
+      "example": "You vote for your favorite leader in an election.",
+      "audio": ""
+    },
+    {
+      "word": "magazine",
+      "type": "Noun",
+      "ipa": "/ˌmæɡ.əˈziːn/",
+      "meaning": "Tạp chí",
+      "example": "You read a magazine weekly or monthly for news and entertainment.",
+      "audio": ""
+    },
+    {
+      "word": "honeymoon",
+      "type": "Noun",
+      "ipa": "/ˈhʌn.i.muːn/",
+      "meaning": "Tuần trăng mật",
+      "example": "While they were on their honeymoon, a former wife went to their apartment.",
+      "audio": ""
+    },
+    {
+      "word": "competition",
+      "type": "Noun",
+      "ipa": "/ˌkɒm.pəˈtɪʃ.ən/",
+      "meaning": "Cuộc thi",
+      "example": "Take part in this competition and you may win a prize!",
+      "audio": ""
+    },
+    {
+      "word": "trophy",
+      "type": "Noun",
+      "ipa": "/ˈtrəʊ.fi/",
+      "meaning": "Cúp, chiến lợi phẩm",
+      "example": "A trophy is a kind of prize given to the winner of a contest.",
+      "audio": ""
+    },
+    {
+      "word": "local news",
+      "type": "Noun",
+      "ipa": "/ˈləʊ.kəl njuːz/",
+      "meaning": "Tin địa phương",
+      "example": "You can find the latest local news in this section of the paper.",
+      "audio": ""
+    },
+    {
+      "word": "happy ending",
+      "type": "Noun",
+      "ipa": "/ˌhæp.i ˈend.ɪŋ/",
+      "meaning": "Kết thúc có hậu",
+      "example": "Most people prefer a story with a happy ending.",
+      "audio": ""
+    }
+  ]
+}

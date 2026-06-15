@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocab Quiz - Setup</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Luyện Từ Vựng</h1>
+        <div class="setup-form">
+            <div class="form-group">
+                <label>Chọn bộ từ:</label>
+                <div class="search-box">
+                    <input type="text" id="topic-search" placeholder="Tìm kiếm chủ đề...">
+                </div>
+                
+                <div id="topic-grid" class="topic-grid">
+                    <!-- Cards will be injected here -->
+                </div>
+
+                <div id="pagination" class="pagination-ctrl">
+                    <!-- Pagination buttons -->
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="word-count">Số lượng câu hỏi:</label>
+                <input type="number" id="word-count" min="1" max="50" value="10">
+            </div>
+            
+            <div class="form-group">
+                <label for="quiz-mode">Chế độ:</label>
+                <select id="quiz-mode">
+                    <option value="normal">Bình thường</option>
+                    <option value="trick">Trick Mode (Hạn giờ + Anti-cheat)</option>
+                </select>
+            </div>
+            
+            <button id="start-btn" class="btn-primary">Bắt đầu</button>
+        </div>
+    </div>
+    <script src="js/config.js"></script>
+    <script src="js/vocab-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
