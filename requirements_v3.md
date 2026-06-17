@@ -62,7 +62,7 @@ Website tĩnh giúp sinh viên luyện từ vựng bằng cách nhập đáp án
 
 #### Mask logic
 ```js
-const regex = new RegExp(`\b${word}\b`, "gi");
+const regex = new RegExp(`\\\\b${word}\\\\b`, "gi");
 example.replace(regex, "****");
 ```
 

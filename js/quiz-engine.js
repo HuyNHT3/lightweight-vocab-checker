@@ -16,11 +16,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     // DOM elements
     const progressText = document.getElementById('progress-text');
     const ipaDisplay = document.getElementById('ipa-display');
+    const meaningDisplay = document.getElementById('meaning-text'); // Thêm element cho ý nghĩa
     const exampleDisplay = document.getElementById('example-display');
     const answerInput = document.getElementById('answer-input');
     const submitBtn = document.getElementById('submit-btn');
     const skipBtn = document.getElementById('skip-btn');
     const speakerBtn = document.getElementById('speaker-btn'); // Nút loa trong màn hình quiz
+    const exampleSpeakerBtn = document.getElementById('example-speaker-btn'); // Nút loa ví dụ
     const timerDisplay = document.getElementById('timer-display');
     const warningContainer = document.getElementById('warning-container');
     const warningCountDisplay = document.getElementById('warning-count');
@@ -42,8 +44,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Helper function to mask the word in the example sentence
     function maskExample(example, word) {
+        if (!example || !word) return example;
         // Use word boundaries to avoid masking parts of other words (e.g., "an" in "analyze")
-        const regex = new RegExp(`\\b${word}\\b`, "gi");
+        // Escape regex special characters in the word itself
+        const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(`\\b${escapedWord}\\b`, "gi");
         return example.replace(regex, '<span class="masked">****</span>');
     }
 
@@ -84,6 +89,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const currentWord = currentQuizData[currentQuestionIndex];
         progressText.textContent = `Câu hỏi: ${currentQuestionIndex + 1}/${totalQuestions}`;
         ipaDisplay.textContent = currentWord.ipa;
+        meaningDisplay.textContent = currentWord.meaning; // Hiển thị ý nghĩa
         exampleDisplay.innerHTML = maskExample(currentWord.example, currentWord.word);
         answerInput.value = ''; // Clear previous answer
         answerInput.focus(); // Focus on the input field
@@ -270,6 +276,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         speakerBtn.addEventListener('click', () => {
             const currentWord = currentQuizData[currentQuestionIndex];
             if (currentWord) vocabAudioService.speak(currentWord.word);
+        });
+    }
+
+    if (exampleSpeakerBtn) {
+        exampleSpeakerBtn.addEventListener('click', () => {
+            const currentWord = currentQuizData[currentQuestionIndex];
+            if (currentWord) vocabAudioService.speak(currentWord.example);
         });
     }
 

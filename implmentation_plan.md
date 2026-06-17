@@ -97,11 +97,13 @@ Tích hợp tính năng chuyển đổi văn bản thành giọng nói (Text-to-
 - [x] Xây dựng giao diện Login Overlay (frame nhập mã).
 - [x] Thực hiện logic kiểm tra passcode và duy trì trạng thái đăng nhập trong session.
 
-## Phase 6: Compliance & Final Review
+## Phase 6: Minor update
 
-1.  **Dependency Audit**: Verify no URLs point to external CDNs or APIs in HTML/CSS/JS.
-2.  **Naming Convention Check**: Ensure all functions and variables are generic (e.g., `checkAnswer`, `startTimer`).
-3.  **Data Scrubbing**: Confirm no internal company terminology or mock internal endpoints remain in the code.
+1.  **Thêm ý nghĩa**: tôi muốn ở màn hình trắc nghiệm ngoài việc hiển thị example, ở phía trên phải hiển thị ý nghĩa của từ đó.
+2.  **add thêm icon speaker phục vụ việc đọc**: tôi muốn thêm một speaker để đọc toàn bộ example, speaker 2, mới, hiển thị sát, cuối example để khi click vào sẽ đọc toàn bộ câu, speaker icon cũ hãy sửa lại nằm sát chổ hiển thị IPA. (DONE)
+3.  **Fix bug**: từ vựng có trong example không bị che trong một vài trường hợp. (DONE)
+vi dụ: limit -> limited( không được che)
+share -> shares (không được che) -> Giải pháp: Sử dụng strict word boundary \\\\b trong Regex kết hợp escape ký tự đặc biệt.
 
 ## Milestones
 
