@@ -1,17 +1,22 @@
 [
   {
-    "id": "topic1.json",
-    "title": "IELTS Academic (Cambridge 8)",
-    "description": "Bộ từ vựng học thuật từ Cam 8"
+    "id": "letstalk2lesson13.json",
+    "title": "Let's talk 2, Lesson 13",
+    "description": "Từ vựng thông dụng trong Let's talk 2"
   },
   {
-    "id": "topic2.json",
-    "title": "IELTS Cambridge (General)",
-    "description": "Từ vựng thông dụng trong kỳ thi Cambridge"
+    "id": "letstalk2lesson14.json",
+    "title": "Let's talk 2, Lesson 14",
+    "description": "Từ vựng thông dụng trong Let's talk 2"
   },
   {
-    "id": "topic3.json",
-    "title": "Let's talk 2",
+    "id": "letstalk2lesson12.json",
+    "title": "Let's talk 2, Lesson 12",
+    "description": "Từ vựng thông dụng trong Let's talk 2"
+  },
+  {
+    "id": "pet2test1.json",
+    "title": "Pet 2, Test 1",
     "description": "Từ vựng thông dụng trong Let's talk 2"
   }
 ]
