@@ -8,7 +8,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>Luyện Từ Vựng</h1>
+        <div class="header-content">
+            <img src="assets/main_logo.png" alt="App Logo" class="app-logo" width="200" height="100">
+            <h1>Luyện Từ Vựng</h1>
+        </div>
         <div class="setup-form">
             <div class="form-group">
                 <label>Chọn bộ từ:</label>
@@ -41,9 +44,16 @@
             <button id="start-btn" class="btn-primary">Bắt đầu</button>
         </div>
     </div>
+
+    <!-- Custom Cursor Structure -->
+    <div id="custom-cursor-container">
+        <img src="assets/mec-cursor.gif" alt="" class="cursor-gif">
+    </div>
+
     <script src="js/config.js"></script>
     <script src="js/vocab-service.js"></script>
     <script src="js/storage-service.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/custom-cursor.js"></script>
 </body>
 </html>

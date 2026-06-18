@@ -37,7 +37,37 @@ body {
     }
 }
 
-h1 { text-align: center; color: #2c3e50; margin-bottom: 1.5rem; }
+/* Header & Logo */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-logo {
+    max-width: 350px; /* Tăng kích thước logo to ra theo yêu cầu */
+    height: auto;
+}
+
+/* Custom Animated Cursor */
+#custom-cursor-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    pointer-events: none; /* Quan trọng: để có thể click xuyên qua con trỏ */
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    will-change: left, top;
+    transform: translate(10px, 15px); /* Đẩy ảnh GIF xuống dưới và sang phải so với mũi tên */
+}
+
+.cursor-gif {
+    width: 40px; /* Kích thước ảnh GIF con trỏ */
+    height: auto;
+}
+
+h1 { text-align: center; color: #2c3e50; margin-bottom: 0; }
 
 /* Form Elements */
 .form-group { margin-bottom: 1.5rem; }
