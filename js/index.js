@@ -18,14 +18,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     let currentPage = 1;
     const cardsPerPage = 6;
 
-    // Danh sách các màu nền nhẹ (Pastel)
-    const pastelColors = [
-        '#fdf2f2', // Hồng nhạt
-        '#fdfaf2', // Cam nhạt
-        '#f2fdf2', // Xanh lá nhạt
-        '#f2f8fd', // Xanh dương nhạt
-        '#f5f2fd', // Tím nhạt
-        '#fdf2f8'  // Magenta nhạt
+    // Danh sách các màu mờ huyền bí hợp với Dark Theme
+    const darkTechColors = [
+        'rgba(30, 34, 54, 0.95)',   // Tone tím xám mờ
+        'rgba(26, 38, 57, 0.95)',   // Tone xanh xám mờ
+        'rgba(35, 30, 52, 0.95)',   // Tone indigo mờ
+        'rgba(38, 32, 48, 0.95)',   // Tone mận tối mờ
+        'rgba(24, 38, 48, 0.95)',   // Tone teal tối mờ
+        'rgba(32, 32, 54, 0.95)'    // Tone xanh tím mờ
     ];
 
     // Hàm cập nhật số lượng câu hỏi tối đa dựa trên bộ từ được chọn
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         paginatedTopics.forEach(topic => {
             // Tìm index gốc để giữ màu cố định cho mỗi chủ đề
             const originalIndex = allTopics.findIndex(t => t.id === topic.id);
-            const bgColor = pastelColors[originalIndex % pastelColors.length];
+            const bgColor = darkTechColors[originalIndex % darkTechColors.length];
 
             const card = document.createElement('div');
             card.className = `topic-card ${selectedTopicId === topic.id ? 'selected' : ''}`;
