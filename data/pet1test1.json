@@ -1,0 +1,186 @@
+{
+  "topic": "Vocabulary Review",
+  "description": "Vocabulary set including various topics such as technology, emotions, actions, and general concepts.",
+  "words": [
+    {
+      "id": 1,
+      "word": "display",
+      "type": "Verb",
+      "ipa": "/dɪˈspleɪ/",
+      "meaning": "Trưng bày",
+      "example": "The latest products are on display in the showroom.",
+      "audio": ""
+    },
+    {
+      "id": 2,
+      "word": "adventure",
+      "type": "Noun",
+      "ipa": "/ədˈven.tʃər/",
+      "meaning": "Cuộc phiêu lưu",
+      "example": "When back-packing, you can experience a real sense of adventure.",
+      "audio": ""
+    },
+    {
+      "id": 3,
+      "word": "material",
+      "type": "Noun",
+      "ipa": "/məˈtɪə.ri.əl/",
+      "meaning": "Vật liệu, chất liệu, tài liệu",
+      "example": "Every material used to build this home was recycled.",
+      "audio": ""
+    },
+    {
+      "id": 4,
+      "word": "exhibition",
+      "type": "Noun",
+      "ipa": "/ˌek.sɪˈbɪʃ.ən/",
+      "meaning": "Cuộc triển lãm",
+      "example": "There is a new art exhibition opening at the museum.",
+      "audio": ""
+    },
+    {
+      "id": 5,
+      "word": "latest technology",
+      "type": "Noun",
+      "ipa": "/ˈleɪ.tɪst tekˈnɒl.ə.dʒi/",
+      "meaning": "Công nghệ mới nhất",
+      "example": "The new smartphone is equipped with the latest technology.",
+      "audio": ""
+    },
+    {
+      "id": 6,
+      "word": "concentrate",
+      "type": "Verb",
+      "ipa": "/ˈkɒn.sən.treɪt/",
+      "meaning": "Tập trung",
+      "example": "I can't concentrate on my work with all this noise.",
+      "audio": ""
+    },
+    {
+      "id": 7,
+      "word": "concentration",
+      "type": "Noun",
+      "ipa": "/ˌkɒn.sənˈtreɪ.ʃən/",
+      "meaning": "Sự tập trung",
+      "example": "Stress can affect your concentration at work.",
+      "audio": ""
+    },
+    {
+      "id": 8,
+      "word": "maintain",
+      "type": "Verb",
+      "ipa": "/meɪnˈteɪn/",
+      "meaning": "Duy trì",
+      "example": "It is important to maintain a healthy lifestyle.",
+      "audio": ""
+    },
+    {
+      "id": 9,
+      "word": "grow up",
+      "type": "Phrasal Verb",
+      "ipa": "/ɡrəʊ ʌp/",
+      "meaning": "Lớn lên",
+      "example": "He grew up in a small town in the countryside.",
+      "audio": ""
+    },
+    {
+      "id": 10,
+      "word": "select",
+      "type": "Verb",
+      "ipa": "/sɪˈlekt/",
+      "meaning": "Lựa chọn",
+      "example": "You can select your favorite options from the menu.",
+      "audio": ""
+    },
+    {
+      "id": 11,
+      "word": "disappointed",
+      "type": "Adjective",
+      "ipa": "/ˌdɪs.əˈpɔɪn.tɪd/",
+      "meaning": "Thất vọng",
+      "example": "She was disappointed with the exam results.",
+      "audio": ""
+    },
+    {
+      "id": 12,
+      "word": "ambition",
+      "type": "Noun",
+      "ipa": "/æmˈbɪʃ.ən/",
+      "meaning": "Sự tham vọng",
+      "example": "His main ambition is to become a successful software engineer.",
+      "audio": ""
+    },
+    {
+      "id": 13,
+      "word": "unless",
+      "type": "Conjunction",
+      "ipa": "/ənˈles/",
+      "meaning": "Trừ khi",
+      "example": "You won't pass the exam unless you study hard.",
+      "audio": ""
+    },
+    {
+      "id": 14,
+      "word": "reach",
+      "type": "Verb",
+      "ipa": "/riːtʃ/",
+      "meaning": "Đến, tới",
+      "example": "We hope to reach our destination before dark.",
+      "audio": ""
+    },
+    {
+      "id": 15,
+      "word": "wonder",
+      "type": "Verb",
+      "ipa": "/ˈwʌn.dər/",
+      "meaning": "Thắc mắc, băn khoăn",
+      "example": "I wonder if it will rain tomorrow.",
+      "audio": ""
+    },
+    {
+      "id": 16,
+      "word": "shout",
+      "type": "Verb",
+      "ipa": "/ʃaʊt/",
+      "meaning": "Hét lên, hò reo",
+      "example": "There's no need to shout, I can hear you clearly.",
+      "audio": ""
+    },
+    {
+      "id": 17,
+      "word": "defeat",
+      "type": "Verb",
+      "ipa": "/dɪˈfiːt/",
+      "meaning": "Đánh bại",
+      "example": "The team managed to defeat their opponents in the final match.",
+      "audio": ""
+    },
+    {
+      "id": 18,
+      "word": "performance",
+      "type": "Noun",
+      "ipa": "/pəˈfɔː.məns/",
+      "meaning": "Màn trình diễn, hiệu suất",
+      "example": "Her performance in the play was outstanding.",
+      "audio": ""
+    },
+    {
+      "id": 19,
+      "word": "excitement",
+      "type": "Noun",
+      "ipa": "/ɪkˈsaɪt.mənt/",
+      "meaning": "Sự hồi hộp, kịch tính, phấn khích",
+      "example": "The crowd gasped in excitement during the scene.",
+      "audio": ""
+    },
+    {
+      "id": 20,
+      "word": "chase",
+      "type": "Verb",
+      "ipa": "/tʃeɪs/",
+      "meaning": "Đuổi theo",
+      "example": "The cat likes to chase mice around the garden.",
+      "audio": ""
+    }
+  ]
+}
