@@ -1,0 +1,150 @@
+{
+  "topic": "Education & Leisure Vocabulary",
+  "description": "Vocabulary set focusing on education, levels, achievements, and leisure activities.",
+  "words": [
+    {
+      "id": 1,
+      "word": "laboratory",
+      "type": "Noun",
+      "ipa": "/ləˈbɒr.ə.tər.i/",
+      "meaning": "Phòng thí nghiệm",
+      "example": "Students are working on their science project in the laboratory.",
+      "audio": ""
+    },
+    {
+      "id": 2,
+      "word": "revise",
+      "type": "Verb",
+      "ipa": "/rɪˈvaɪz/",
+      "meaning": "Ôn tập, xem lại bài tập, chỉnh sửa",
+      "example": "You should revise your lessons carefully before the exam.",
+      "audio": ""
+    },
+    {
+      "id": 3,
+      "word": "funfair",
+      "type": "Noun",
+      "ipa": "/ˈfʌn.feər/",
+      "meaning": "Hội chợ vui chơi",
+      "example": "We had a lot of fun at the local funfair last weekend.",
+      "audio": ""
+    },
+    {
+      "id": 4,
+      "word": "shallow",
+      "type": "Adjective",
+      "ipa": "/ˈʃæl.əʊ/",
+      "meaning": "Không sâu, nông",
+      "example": "Young children should swim in the shallow end of the pool.",
+      "audio": ""
+    },
+    {
+      "id": 5,
+      "word": "teenage",
+      "type": "Adjective",
+      "ipa": "/ˈtiːn.eɪdʒ/",
+      "meaning": "Tuổi thiếu niên",
+      "example": "Many teenage students enjoy playing video games in their free time.",
+      "audio": ""
+    },
+    {
+      "id": 6,
+      "word": "certificate",
+      "type": "Noun",
+      "ipa": "/səˈtɪf.ɪ.kət/",
+      "meaning": "Chứng chỉ, giấy chứng nhận",
+      "example": "She received a certificate of achievement after completing the course.",
+      "audio": ""
+    },
+    {
+      "id": 7,
+      "word": "standard",
+      "type": "Noun",
+      "ipa": "/ˈstæn.dəd/",
+      "meaning": "Tiêu chuẩn",
+      "example": "The school maintains high academic standards.",
+      "audio": ""
+    },
+    {
+      "id": 8,
+      "word": "champion",
+      "type": "Noun",
+      "ipa": "/ˈtʃæm.pi.ən/",
+      "meaning": "Nhà vô địch",
+      "example": "He became the chess champion after winning the final round.",
+      "audio": ""
+    },
+    {
+      "id": 9,
+      "word": "intermediate",
+      "type": "Adjective",
+      "ipa": "/ˌɪn.təˈmiː.di.ət/",
+      "meaning": "Ở mức trung bình, trung cấp",
+      "example": "This English course is designed for intermediate students.",
+      "audio": ""
+    },
+    {
+      "id": 10,
+      "word": "aim",
+      "type": "Verb",
+      "ipa": "/eɪm/",
+      "meaning": "Đặt mục tiêu, nhắm tới",
+      "example": "We aim to improve student scores by the end of the term.",
+      "audio": ""
+    },
+    {
+      "id": 11,
+      "word": "headmaster",
+      "type": "Noun",
+      "ipa": "/ˌhedˈmɑː.stər/",
+      "meaning": "Thầy hiệu trưởng",
+      "example": "The headmaster gave an inspiring speech during the school assembly.",
+      "audio": ""
+    },
+    {
+      "id": 12,
+      "word": "sculpture",
+      "type": "Noun",
+      "ipa": "/ˈskʌlp.tʃər/",
+      "meaning": "Tác phẩm điêu khắc",
+      "example": "There is a beautiful modern sculpture in front of the building.",
+      "audio": ""
+    },
+    {
+      "id": 13,
+      "word": "session",
+      "type": "Noun",
+      "ipa": "/ˈseʃ.ən/",
+      "meaning": "Buổi, cuộc họp, phiên họp",
+      "example": "The training session will start at 9:00 AM sharp.",
+      "audio": ""
+    },
+    {
+      "id": 14,
+      "word": "professor",
+      "type": "Noun",
+      "ipa": "/prəˈfes.ər/",
+      "meaning": "Giáo sư",
+      "example": "The professor gave a lecture on modern history.",
+      "audio": ""
+    },
+    {
+      "id": 15,
+      "word": "reserve",
+      "type": "Verb",
+      "ipa": "/rɪˈzɜːv/",
+      "meaning": "Đặt trước",
+      "example": "I would like to reserve a table for two tonight.",
+      "audio": ""
+    },
+    {
+      "id": 16,
+      "word": "audience",
+      "type": "Noun",
+      "ipa": "/ˈɔː.di.əns/",
+      "meaning": "Thính giả, khán giả",
+      "example": "The audience applauded enthusiastically at the end of the show.",
+      "audio": ""
+    }
+  ]
+}
