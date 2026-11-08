@@ -6,10 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Get the latest quiz result from StorageService
     const quizHistory = StorageService.getQuizHistory();
+    const printBtn = document.getElementById('print-btn');
+
     if (quizHistory.length === 0) {
         // No history found, redirect to index or show a message
         scoreSummary.innerHTML = "Không tìm thấy kết quả quiz nào. Vui lòng bắt đầu một bài quiz mới.";
         resultsList.innerHTML = "";
+        if (printBtn) printBtn.style.display = 'none';
         return;
     }
 
@@ -98,4 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // Sự kiện mở hộp thoại in / xuất PDF
+    if (printBtn) {
+        printBtn.addEventListener('click', () => {
+            window.print();
+        });
+    }
 });

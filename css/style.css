@@ -215,7 +215,7 @@ select:focus, input[type="number"]:focus, input[type="text"]:focus {
 }
 
 /* Buttons */
-.btn-primary, .btn-secondary {
+.btn-primary, .btn-secondary, .btn-print {
     padding: 0.85rem 1.6rem;
     border: none;
     border-radius: 10px;
@@ -224,8 +224,12 @@ select:focus, input[type="number"]:focus, input[type="text"]:focus {
     font-weight: 700;
     transition: all 0.2s ease;
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .btn-primary {
@@ -441,5 +445,156 @@ select:focus, input[type="number"]:focus, input[type="text"]:focus {
 }
 
 .footer-actions {
-    margin-top: 1.5rem;
+    margin-top: 1.8rem;
+    display: flex;
+    gap: 14px;
+}
+
+.footer-actions .btn-primary,
+.footer-actions .btn-print {
+    flex: 1;
+    width: auto;
+}
+
+.btn-print {
+    background: linear-gradient(135deg, #059669, #10b981);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+}
+
+.btn-print:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45);
+}
+
+.btn-print:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+    .footer-actions {
+        flex-direction: column;
+    }
+
+    .footer-actions .btn-primary,
+    .footer-actions .btn-print {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   Print / Export PDF Styles
+   ========================================================================== */
+@media print {
+    body {
+        background: #ffffff !important;
+        color: #111827 !important;
+        padding: 0 !important;
+    }
+
+    .container {
+        box-shadow: none !important;
+        border: none !important;
+        max-width: 100% !important;
+        padding: 10px 0 !important;
+        background: #ffffff !important;
+    }
+
+    h1 {
+        color: #111827 !important;
+        font-size: 1.6rem !important;
+        margin-bottom: 0.8rem !important;
+    }
+
+    #score-summary {
+        background: #f3f4f6 !important;
+        color: #1f2937 !important;
+        border: 1px solid #d1d5db !important;
+        box-shadow: none !important;
+        padding: 10px !important;
+        margin-bottom: 1.2rem !important;
+    }
+
+    #score-summary #correct-count {
+        color: #059669 !important;
+    }
+
+    .results-container {
+        border: 1px solid #d1d5db !important;
+        box-shadow: none !important;
+        overflow: visible !important;
+        margin: 0 !important;
+    }
+
+    .results-table {
+        background: #ffffff !important;
+        color: #111827 !important;
+        width: 100% !important;
+        border-collapse: collapse !important;
+    }
+
+    .results-table tr {
+        page-break-inside: avoid;
+    }
+
+    .results-table th {
+        background-color: #f3f4f6 !important;
+        color: #374151 !important;
+        border-bottom: 2px solid #d1d5db !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .results-table td {
+        border-bottom: 1px solid #e5e7eb !important;
+        color: #1f2937 !important;
+    }
+
+    .result-word {
+        color: #111827 !important;
+    }
+
+    .results-table tr.correct {
+        background-color: #ecfdf5 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .results-table tr.incorrect {
+        background-color: #fef2f2 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .results-table tr.skipped {
+        background-color: #fffbeb !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .result-status.correct {
+        background: #10b981 !important;
+        color: #ffffff !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .result-status.incorrect {
+        background: #ef4444 !important;
+        color: #ffffff !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .result-status.skipped {
+        background: #f59e0b !important;
+        color: #ffffff !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* Ẩn các nút hành động, con trỏ và cột Nghe âm thanh khi in */
+    .footer-actions,
+    #custom-cursor-container,
+    .results-table th:last-child,
+    .results-table td:last-child {
+        display: none !important;
+    }
 }
