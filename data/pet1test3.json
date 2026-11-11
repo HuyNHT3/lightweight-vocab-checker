@@ -1,0 +1,195 @@
+{
+  "topic": "General Vocabulary & Phrasal Expressions",
+  "description": "Vocabulary set including common verbs, adjectives, nouns, phrasal verbs, and daily expressions.",
+  "words": [
+    {
+      "id": 1,
+      "word": "attach",
+      "type": "Verb",
+      "ipa": "/əˈtætʃ/",
+      "meaning": "Đính kèm",
+      "example": "Please attach your resume to the email before sending.",
+      "audio": ""
+    },
+    {
+      "id": 2,
+      "word": "attach to someone",
+      "type": "Phrasal Verb",
+      "ipa": "/əˈtætʃ tuː ˈsʌm.wʌn/",
+      "meaning": "Gắn bó với ai đó",
+      "example": "Children often attach deeply to their primary caregivers.",
+      "audio": ""
+    },
+    {
+      "id": 3,
+      "word": "beyond",
+      "type": "Adverb",
+      "ipa": "/bɪˈjɒnd/",
+      "meaning": "Vượt qua, bên kia, ngoài phạm vi",
+      "example": "The hills and the river lie just beyond.",
+      "audio": ""
+    },
+    {
+      "id": 4,
+      "word": "rugby",
+      "type": "Noun",
+      "ipa": "/ˈrʌɡ.bi/",
+      "meaning": "Bóng bầu dục",
+      "example": "They love playing rugby after school every afternoon.",
+      "audio": ""
+    },
+    {
+      "id": 5,
+      "word": "hurry",
+      "type": "Verb",
+      "ipa": "/ˈhʌr.i/",
+      "meaning": "Vội vàng",
+      "example": "We need to hurry if we want to catch the last train.",
+      "audio": ""
+    },
+    {
+      "id": 6,
+      "word": "stock",
+      "type": "Noun",
+      "ipa": "/stɒk/",
+      "meaning": "Hàng tồn kho, lượng hàng dự trữ, cổ phiếu, nước dùng",
+      "example": "The store keeps a large stock of office supplies in the back.",
+      "audio": ""
+    },
+    {
+      "id": 7,
+      "word": "plenty of",
+      "type": "Quantifier",
+      "ipa": "/ˈplen.ti ɒv/",
+      "meaning": "Nhiều, dồi dào, phong phú",
+      "example": "Don't rush, there is plenty of time left.",
+      "audio": ""
+    },
+    {
+      "id": 8,
+      "word": "fit",
+      "type": "Adjective",
+      "ipa": "/fɪt/",
+      "meaning": "Phù hợp, vừa vặn, khỏe mạnh",
+      "example": "She goes jogging every day to stay fit.",
+      "audio": ""
+    },
+    {
+      "id": 9,
+      "word": "pocket money",
+      "type": "Noun",
+      "ipa": "/ˈpɒk.ɪt ˌmʌn.i/",
+      "meaning": "Tiền tiêu vặt",
+      "example": "He earns his pocket money by helping with household chores.",
+      "audio": ""
+    },
+    {
+      "id": 10,
+      "word": "efficient",
+      "type": "Adjective",
+      "ipa": "/ɪˈfɪʃ.ənt/",
+      "meaning": "Có hiệu quả",
+      "example": "The new software system is fast and efficient.",
+      "audio": ""
+    },
+    {
+      "id": 11,
+      "word": "facility",
+      "type": "Noun",
+      "ipa": "/fəˈsɪl.ə.ti/",
+      "meaning": "Cơ sở, phương tiện, trang thiết bị",
+      "example": "The university provides modern sports facilities for students.",
+      "audio": ""
+    },
+    {
+      "id": 12,
+      "word": "racket",
+      "type": "Noun",
+      "ipa": "/ˈræk.ɪt/",
+      "meaning": "Vợt (cầu lông, tennis)",
+      "example": "He bought a lightweight tennis racket for the tournament.",
+      "audio": ""
+    },
+    {
+      "id": 13,
+      "word": "midday",
+      "type": "Noun",
+      "ipa": "/ˌmɪdˈdeɪ/",
+      "meaning": "Giữa trưa, khoảng 12 giờ trưa",
+      "example": "The sun is usually hottest around midday.",
+      "audio": ""
+    },
+    {
+      "id": 14,
+      "word": "pack",
+      "type": "Verb",
+      "ipa": "/pæk/",
+      "meaning": "Đóng gói, thu gọn đồ đạc",
+      "example": "Remember to pack your luggage the night before the travel.",
+      "audio": ""
+    },
+    {
+      "id": 15,
+      "word": "strict",
+      "type": "Adjective",
+      "ipa": "/strɪkt/",
+      "meaning": "Nghiêm ngặt",
+      "example": "Our school has strict rules regarding dress code.",
+      "audio": ""
+    },
+    {
+      "id": 16,
+      "word": "untidy",
+      "type": "Adjective",
+      "ipa": "/ʌnˈtaɪ.di/",
+      "meaning": "Bề bộn, không gọn gàng",
+      "example": "His bedroom was so untidy that he couldn't find his keys.",
+      "audio": ""
+    },
+    {
+      "id": 17,
+      "word": "state school",
+      "type": "Noun",
+      "ipa": "/ˈsteɪt ˌskuːl/",
+      "meaning": "Trường công lập",
+      "example": "Most children in the town attend the local state school.",
+      "audio": ""
+    },
+    {
+      "id": 18,
+      "word": "court",
+      "type": "Noun",
+      "ipa": "/kɔːt/",
+      "meaning": "Sân thể thao, tòa án",
+      "example": "They reserved a tennis court for two hours this weekend.",
+      "audio": ""
+    },
+    {
+      "id": 19,
+      "word": "pupil",
+      "type": "Noun",
+      "ipa": "/ˈpjuː.pəl/",
+      "meaning": "Học sinh, con ngươi (mắt)",
+      "example": "The primary school pupil answered the teacher's question accurately.",
+      "audio": ""
+    },
+    {
+      "id": 20,
+      "word": "demonstration",
+      "type": "Noun",
+      "ipa": "/ˌdem.ənˈstreɪ.ʃən/",
+      "meaning": "Sự minh họa, hướng dẫn cách làm, cuộc biểu tình, sự chứng minh",
+      "example": "The chef gave a clear cooking demonstration to the class.",
+      "audio": ""
+    },
+    {
+      "id": 21,
+      "word": "belong to someone",
+      "type": "Phrasal Verb",
+      "ipa": "/bɪˈlɒŋ tuː ˈsʌm.wʌn/",
+      "meaning": "Thuộc về ai đó",
+      "example": "Does this leather jacket belong to anyone here?",
+      "audio": ""
+    }
+  ]
+}

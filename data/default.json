@@ -28,5 +28,10 @@
     "id": "pet1test2.json",
     "title": "Pet 1, Test 2",
     "description": "Từ vựng thông dụng trong PET"
+  },
+  {
+    "id": "pet1test3.json",
+    "title": "Pet 1, Test 3",
+    "description": "Từ vựng thông dụng trong PET"
   }
 ]
