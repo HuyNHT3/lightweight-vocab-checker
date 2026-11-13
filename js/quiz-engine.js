@@ -55,11 +55,53 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Function to load and prepare quiz data
     async function loadQuizData() {
         try {
-            const vocabSet = await VocabService.fetchVocabSet(config.vocabSet);
-            let words = shuffleArray(vocabSet.words);
-            // Select the number of words specified in the config
+            let words = [];
+
+            if (config.isMerged && Array.isArray(config.vocabSets) && config.vocabSets.length > 0) {
+                // Chế độ gộp: Tải song song tất cả các bộ từ qua Promise.all
+                const datasets = await Promise.all(
+                    config.vocabSets.map(filename => VocabService.fetchVocabSet(filename))
+                );
+
+                const rawWords = [];
+                datasets.forEach((dataset, idx) => {
+                    const topicName = (config.topicTitles && config.topicTitles[idx]) 
+                        ? config.topicTitles[idx] 
+                        : (config.vocabSets[idx] || `Chủ đề ${idx + 1}`);
+                    if (dataset && Array.isArray(dataset.words)) {
+                        dataset.words.forEach(w => {
+                            rawWords.push({
+                                ...w,
+                                sourceTopic: topicName
+                            });
+                        });
+                    }
+                });
+
+                // Khử trùng lặp từ vựng (Deduplication) theo từ viết thường
+                const seenWords = new Set();
+                rawWords.forEach(w => {
+                    if (w && w.word) {
+                        const normalized = w.word.trim().toLowerCase();
+                        if (!seenWords.has(normalized)) {
+                            seenWords.add(normalized);
+                            words.push(w);
+                        }
+                    }
+                });
+            } else {
+                // Chế độ đơn: Tải từ vocabSet (hoặc vocabSets[0])
+                const targetFile = config.vocabSet || (config.vocabSets && config.vocabSets[0]);
+                const vocabSet = await VocabService.fetchVocabSet(targetFile);
+                words = (vocabSet && Array.isArray(vocabSet.words)) ? [...vocabSet.words] : [];
+            }
+
+            // Trộn ngẫu nhiên câu hỏi (Fisher-Yates)
+            words = shuffleArray(words);
+
+            // Cắt lấy số lượng câu hỏi theo cấu hình
             currentQuizData = words.slice(0, totalQuestions);
-            // Update totalQuestions in case the actual vocab set has fewer words than requested
+            // Cập nhật totalQuestions theo số lượng thực tế
             totalQuestions = currentQuizData.length;
 
             if (totalQuestions === 0) {
@@ -67,10 +109,12 @@ document.addEventListener('DOMContentLoaded', async () => {
                 window.location.href = 'index.html';
                 return;
             }
+
             if (config.quizMode === 'trick') {
                 startTimer();
                 setupAntiCheat();
             }
+
             displayQuestion();
         } catch (error) {
             console.error("Failed to load quiz data:", error);
@@ -114,6 +158,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             meaning: currentWord.meaning,
             example: currentWord.example,
             audio: currentWord.audio,
+            sourceTopic: currentWord.sourceTopic || '',
             userAnswer: userAnswer,
             isCorrect: isCorrect,
             skipped: false
@@ -133,6 +178,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             meaning: currentWord.meaning,
             example: currentWord.example,
             audio: currentWord.audio,
+            sourceTopic: currentWord.sourceTopic || '',
             userAnswer: '', // Empty for skipped
             isCorrect: false, // Skipped is considered incorrect
             skipped: true
@@ -145,9 +191,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Function to finish the quiz and redirect to the result page
     function finishQuiz() {
         const correctAnswers = quizResults.filter(r => r.isCorrect).length;
+
+        let vocabSetDisplay = config.vocabSet;
+        if (config.isMerged && Array.isArray(config.vocabSets) && config.vocabSets.length > 1) {
+            const topicCount = config.vocabSets.length;
+            const titles = (config.topicTitles && config.topicTitles.length > 0)
+                ? config.topicTitles.join(', ')
+                : config.vocabSets.join(', ');
+            vocabSetDisplay = `Gộp (${topicCount} chủ đề): ${titles}`;
+        } else if (config.topicTitles && config.topicTitles[0]) {
+            vocabSetDisplay = config.topicTitles[0];
+        }
+
         const finalResult = {
-            timestamp: config.timestamp,
-            vocabSet: config.vocabSet,
+            timestamp: config.timestamp || new Date().toISOString(),
+            vocabSet: vocabSetDisplay,
+            isMerged: Boolean(config.isMerged),
             totalQuestions: quizResults.length, // Use actual count from results
             correctAnswers: correctAnswers,
             details: quizResults

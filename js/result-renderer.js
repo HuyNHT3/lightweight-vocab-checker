@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const correctCountSpan = document.getElementById('correct-count');
     const totalCountSpan = document.getElementById('total-count');
     const resultsList = document.getElementById('results-list');
+    const topicInfoContainer = document.getElementById('result-topic-info');
 
     // Get the latest quiz result from StorageService
     const quizHistory = StorageService.getQuizHistory();
@@ -12,11 +13,34 @@ document.addEventListener('DOMContentLoaded', () => {
         // No history found, redirect to index or show a message
         scoreSummary.innerHTML = "Không tìm thấy kết quả quiz nào. Vui lòng bắt đầu một bài quiz mới.";
         resultsList.innerHTML = "";
+        if (topicInfoContainer) topicInfoContainer.innerHTML = "";
         if (printBtn) printBtn.style.display = 'none';
         return;
     }
 
     const latestResult = quizHistory[0]; // Get the most recent result
+
+    // Display topic info if available
+    if (latestResult.vocabSet) {
+        const isMerged = Boolean(
+            latestResult.isMerged || 
+            (typeof latestResult.vocabSet === 'string' && latestResult.vocabSet.startsWith('Gộp'))
+        );
+        const topicHtml = `
+            <div class="result-topic-badge ${isMerged ? 'merged' : ''}">
+                <span class="topic-badge-icon">${isMerged ? '📚' : '📖'}</span>
+                <span class="topic-badge-text">Chủ đề: <strong>${latestResult.vocabSet}</strong></span>
+            </div>
+        `;
+        if (topicInfoContainer) {
+            topicInfoContainer.innerHTML = topicHtml;
+        } else {
+            const containerDiv = document.createElement('div');
+            containerDiv.className = 'result-topic-container';
+            containerDiv.innerHTML = topicHtml;
+            scoreSummary.parentNode.insertBefore(containerDiv, scoreSummary);
+        }
+    }
 
     // Display summary
     correctCountSpan.textContent = latestResult.correctAnswers;
@@ -65,10 +89,13 @@ document.addEventListener('DOMContentLoaded', () => {
             <button class="audio-btn" data-audio-src="${audioPath}" data-word="${item.word}" title="Nghe phát âm">🔊</button>
         `;
 
+        const sourceTopicHtml = item.sourceTopic ? `<div class="result-source-topic">${item.sourceTopic}</div>` : '';
+
         row.innerHTML = `
             <td>
                 <div class="result-word">${item.word}</div>
                 <small>(${item.type})</small>
+                ${sourceTopicHtml}
             </td>
             <td>
                 <div><strong>${item.ipa}</strong></div>

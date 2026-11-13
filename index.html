@@ -14,7 +14,27 @@
         </div>
         <div class="setup-form">
             <div class="form-group">
-                <label>Chọn bộ từ:</label>
+                <div class="topic-header-bar">
+                    <label>Chọn bộ từ:</label>
+                    <div class="merge-toggle-wrapper">
+                        <span class="merge-toggle-label">Gộp chủ đề</span>
+                        <label class="toggle-switch" title="Bật/Tắt chế độ gộp nhiều chủ đề kiểm tra">
+                            <input type="checkbox" id="merge-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="merge-actions-bar" class="merge-actions-bar hidden">
+                    <div class="merge-info-badge">
+                        Đã chọn: <strong id="selected-count">0</strong> chủ đề (<strong id="total-words-count">0</strong> từ)
+                    </div>
+                    <div class="merge-quick-btns">
+                        <button type="button" id="select-all-btn" class="btn-sm">Chọn tất cả</button>
+                        <button type="button" id="deselect-all-btn" class="btn-sm btn-outline">Bỏ chọn</button>
+                    </div>
+                </div>
+
                 <div class="search-box">
                     <input type="text" id="topic-search" placeholder="Tìm kiếm chủ đề...">
                 </div>

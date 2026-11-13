@@ -11,27 +11,80 @@ class StorageService {
 
     /**
      * Saves the current quiz configuration to localStorage.
+     * Supports both single vocabulary set and multiple merged sets.
+     * 
      * @param {object} config - The quiz configuration object.
-     * @param {string} config.vocabSet - The filename of the selected vocabulary set.
+     * @param {string} [config.vocabSet] - The filename of the selected vocabulary set (or primary set).
+     * @param {Array<string>} [config.vocabSets] - Array of filenames for merged topics.
+     * @param {Array<string>} [config.topicTitles] - Array of titles corresponding to the topics.
+     * @param {boolean} [config.isMerged] - Whether this quiz is in merge mode.
      * @param {number} config.wordCount - The number of words for the quiz.
      * @param {string} config.quizMode - The selected quiz mode ('normal' or 'trick').
+     * @param {string} [config.timestamp] - ISO timestamp when the quiz was configured.
      */
     static saveQuizConfig(config) {
         try {
-            localStorage.setItem(StorageService.QUIZ_CONFIG_KEY, JSON.stringify(config));
+            if (!config || typeof config !== 'object') {
+                throw new Error("Invalid configuration object provided.");
+            }
+
+            // Chuẩn hóa dữ liệu để đảm bảo tương thích 2 chiều
+            const normalizedConfig = { ...config };
+
+            // Đảm bảo có cả vocabSets (mảng) và vocabSet (string fallback)
+            if (Array.isArray(normalizedConfig.vocabSets) && normalizedConfig.vocabSets.length > 0) {
+                if (!normalizedConfig.vocabSet) {
+                    normalizedConfig.vocabSet = normalizedConfig.vocabSets[0];
+                }
+            } else if (normalizedConfig.vocabSet) {
+                normalizedConfig.vocabSets = [normalizedConfig.vocabSet];
+            } else {
+                normalizedConfig.vocabSets = [];
+            }
+
+            normalizedConfig.isMerged = Boolean(
+                normalizedConfig.isMerged || (normalizedConfig.vocabSets && normalizedConfig.vocabSets.length > 1)
+            );
+
+            if (!Array.isArray(normalizedConfig.topicTitles)) {
+                normalizedConfig.topicTitles = normalizedConfig.vocabSet ? [normalizedConfig.vocabSet] : [];
+            }
+
+            if (!normalizedConfig.timestamp) {
+                normalizedConfig.timestamp = new Date().toISOString();
+            }
+
+            localStorage.setItem(StorageService.QUIZ_CONFIG_KEY, JSON.stringify(normalizedConfig));
         } catch (e) {
             console.error("Error saving quiz configuration to localStorage:", e);
         }
     }
 
     /**
-     * Retrieves the quiz configuration from localStorage.
-     * @returns {object|null} The quiz configuration object, or null if not found.
+     * Retrieves the quiz configuration from localStorage and normalizes it.
+     * @returns {object|null} The normalized quiz configuration object, or null if not found.
      */
     static getQuizConfig() {
         try {
-            const config = localStorage.getItem(StorageService.QUIZ_CONFIG_KEY);
-            return config ? JSON.parse(config) : null;
+            const rawConfig = localStorage.getItem(StorageService.QUIZ_CONFIG_KEY);
+            if (!rawConfig) return null;
+
+            const config = JSON.parse(rawConfig);
+            if (!config || typeof config !== 'object') return null;
+
+            // Đảm bảo các thuộc tính mảng luôn tồn tại cho caller sử dụng an toàn
+            if (!Array.isArray(config.vocabSets)) {
+                config.vocabSets = config.vocabSet ? [config.vocabSet] : [];
+            }
+            if (!config.vocabSet && config.vocabSets.length > 0) {
+                config.vocabSet = config.vocabSets[0];
+            }
+            if (!Array.isArray(config.topicTitles)) {
+                config.topicTitles = config.vocabSet ? [config.vocabSet] : [];
+            }
+            config.isMerged = Boolean(config.isMerged || config.vocabSets.length > 1);
+
+            return config;
         } catch (e) {
             console.error("Error retrieving quiz configuration from localStorage:", e);
             return null;
@@ -42,7 +95,7 @@ class StorageService {
      * Saves a quiz result to the history, keeping only the latest MAX_HISTORY_RECORDS.
      * @param {object} result - The quiz result object to save.
      * @param {string} result.timestamp - Timestamp of the quiz.
-     * @param {string} result.vocabSet - The vocabulary set used.
+     * @param {string|Array<string>} result.vocabSet - The vocabulary set(s) used.
      * @param {number} result.totalQuestions - Total questions in the quiz.
      * @param {number} result.correctAnswers - Number of correct answers.
      * @param {Array<object>} result.details - Detailed results for each question.
